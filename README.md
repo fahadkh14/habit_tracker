@@ -255,33 +255,24 @@ habit-frontend   Up
 ## Login Page
 
 <p align="center">
-  <img src="./images/login.png" alt="Login Page" width="900">
+  <img src="images/login.png" alt="Login Page" width="900">
 </p>
-
-```
-habbit_tracker/images/habit-tracker.png
-```
 
 ```
 
 ## Habit Tracker
 
 ```
-habbit_tracker/images/habit-tracker.png
-```
-```
 <p align="center">
-  <img src="./images/habit-tracker.png" alt="Habit Tracker Dashboard" width="900">
-  </p>
+  <img src="images/habit-tracker.png" alt="Habit Tracker" width="900">
+</p>
 ```
 ## Mood Chart
 
 ```
 <p align="center">
-  <img src="./images/mood-chart.png" alt="Mood Chart" width="900">
+  <img src="images/mood-chart.png" alt="Mood Chart" width="900">
 </p>
-habbit_tracker/images/mood-chart.png
-```
 
 ---
 
