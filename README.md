@@ -70,7 +70,7 @@ A full-stack **Habit Tracker** application built using a **3-Tier Architecture**
 
 # 📂 Project Structure
 
-
+```text
 habit_tracker/
 │
 ├── backend/
