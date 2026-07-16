@@ -104,11 +104,10 @@ habit_tracker/
 
 ## Clone Repository
 
-```bash
-git clone https://github.com/yourusername/habit-tracker.git
 
+git clone https://github.com/fahadkh14/habit_tracker.git
 cd habit-tracker
-```
+
 
 ---
 
@@ -251,25 +250,25 @@ habit-frontend   Up
 ---
 
 # 📷 Screenshots
-```
+
 ## Login Page
 
 <p align="center">
   <img src="images/login.png" alt="Login Page" width="900">
 </p>
 
-```
+
 
 ## Habit Tracker
 
-```
+
 <p align="center">
   <img src="images/habit-tracker.png" alt="Habit Tracker" width="900">
 </p>
-```
+
 ## Mood Chart
 
-```
+
 <p align="center">
   <img src="images/mood-chart.png" alt="Mood Chart" width="900">
 </p>
