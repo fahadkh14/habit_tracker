@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+
+  mysql:
+    image: mysql:8.4
+    container_name: habit-mysql
+    restart: always
+
+    env_file:
+      - .env
+
+    ports:
+      - "3307:3306"
+
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    networks:
+      - habit-network
+
+  backend:
+    build: ./backend
+    container_name: habit-backend
+    restart: always
+
+    env_file:
+      - .env
+
+    depends_on:
+      - mysql
+
+    ports:
+      - "5000:5000"
+
+    networks:
+      - habit-network
+
+  frontend:
+    build: ./frontend
+    container_name: habit-frontend
+    restart: always
+
+    depends_on:
+      - backend
+
+    ports:
+      - "3000:80"
+
+    networks:
+      - habit-network
+
+networks:
+  habit-network:
+    driver: bridge
+
+volumes:
+  mysql-data:

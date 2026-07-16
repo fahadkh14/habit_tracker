@@ -1,0 +1,32 @@
+body{
+    background:#f4f7fb;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.navbar{
+    margin-bottom:20px;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+    min-width:40px;
+}
+
+table td{
+    min-width:40px;
+    vertical-align:middle;
+}
+
+table td:hover{
+    background:#dbeafe;
+}
+
+button{
+    border-radius:8px;
+}
