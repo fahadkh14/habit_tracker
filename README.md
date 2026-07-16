@@ -25,7 +25,7 @@ A full-stack **Habit Tracker** application built using a **3-Tier Architecture**
 
 # 🏗️ Architecture
 
-```
+
                 React Frontend
                        │
                   REST API (Axios)
@@ -35,7 +35,7 @@ A full-stack **Habit Tracker** application built using a **3-Tier Architecture**
                   Sequelize ORM
                        │
                      MySQL
-```
+
 
 ---
 
@@ -70,7 +70,7 @@ A full-stack **Habit Tracker** application built using a **3-Tier Architecture**
 
 # 📂 Project Structure
 
-```text
+
 habit_tracker/
 │
 ├── backend/
@@ -96,7 +96,7 @@ habit_tracker/
 ├── docker-compose.yml
 ├── .env
 └── README.md
-```
+
 
 ---
 
@@ -106,6 +106,7 @@ habit_tracker/
 
 
 git clone https://github.com/fahadkh14/habit_tracker.git
+
 cd habit-tracker
 
 
