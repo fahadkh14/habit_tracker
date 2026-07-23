@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: backend
+  namespace: habbit
+  labels:
+    app: habit-tracker-backend
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: habit-tracker-backend
+
+  template:
+    metadata:
+      labels:
+        app: habit-tracker-backend
+
+    spec:
+      containers:
+        - name: habit-tracker-backend
+          image: habbit_tracker-backend:latest
+          imagePullPolicy: Never
+
+          ports:
+            - containerPort: 5000
+
+          envFrom:
+            - configMapRef:
+                name: habit-config
+
+            - secretRef:
+                name: habit-secret

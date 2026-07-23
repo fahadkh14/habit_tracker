@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: habit-config
+  namespace: habbit
+
+data:
+  DB_HOST: backend
+  DB_PORT: "3306"
+  DB_NAME: habitdb
+  PORT: "5000"

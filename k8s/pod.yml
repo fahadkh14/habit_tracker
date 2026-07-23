@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: frontend-habit-pod
+  namespace: habbit
+
+spec:
+  containers:
+    - name: habit-tracker
+      image: habbit_tracker-frontend:latest
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 80

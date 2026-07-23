@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: habbit
+  labels:
+    app:  habit-tracker-frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: habit-tracker-frontend
+  template:
+    metadata:
+      labels:
+        app: habit-tracker-frontend
+    spec:
+      containers:
+      - name: habit-tracker-frontend
+        image: habbit_tracker-frontend:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
